@@ -26,4 +26,4 @@ If you're not already using <a href="https://github.com/scottjehl/Respond">Respo
 Special thanks to <a href="https://github.com/coliff">coliff</a> for a starting point, and <a href="https://github.com/rassie">rassie</a> for the Glyphicon code.
 
 ### License ###
-Released under the MIT license.
+Released under the Apache 2 license.
