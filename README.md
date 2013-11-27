@@ -2,7 +2,7 @@ Bootstrap 3 IE7 Fix
 ============================
 Adds IE7 support to Bootstrap 3. 
 
-* Provides IE7-specific styles for Bootstrap components and HTML elements
+* Applies IE7-specific styles to Bootstrap components and HTML elements
 * Includes bug fixes for the usual suspects: hasLayout, inline-block bug, z-index bug., etc
 * VM tested for greatest reliability
 
