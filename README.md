@@ -11,7 +11,7 @@ Add this conditional after bootstrap.css:
 
 ```html
 <!--[if lt IE 8]>
-    <link href="css/bootstrap-ie7fix.css" rel="stylesheet">
+  <link href="css/bootstrap-ie7fix.css" rel="stylesheet">
 <![endif]-->
 ```
 
