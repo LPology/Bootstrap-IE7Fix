@@ -3,8 +3,7 @@ Bootstrap 3 IE7 Fix
 Adds IE7 support to Bootstrap 3. 
 
 * Adds IE7-specific formatting to Bootstrap components and HTML elements
-* Fixes IE hasLayout bug with zoom
-* Applies IE inline hack to fix the inline-block bug
+* Includes bug fixes for the usual suspects: hasLayout, inline-block bug, z-index bug., etc
 * VM tested for most reliability
 
 ### How to Use ###
