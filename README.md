@@ -1,6 +1,11 @@
 Bootstrap 3 IE7 Fix
 ============================
-Adds IE7 support to Bootstrap 3.
+Adds IE7 support to Bootstrap 3. 
+
+* Adds IE7-specific formatting to Bootstrap components and HTML elements
+* Fixes IE hasLayout bug with zoom
+* Applies IE inline hack to fix the inline-block bug
+* VM tested for most reliability
 
 ### How to Use ###
 Add this conditional after bootstrap.css:
@@ -11,13 +16,7 @@ Add this conditional after bootstrap.css:
 <![endif]-->
 ```
 
-If you're not already using <a href="https://github.com/scottjehl/Respond">Respond.js</a>, you'll need to add it to support media queries.
-
-### About ###
-* Adds IE7-specific formatting to Bootstrap components and HTML elements
-* Fixes IE hasLayout bug with zoom
-* Applies IE inline hack to fix the inline-block bug
-* VM tested for most reliability
+If you're not already using <a href="https://github.com/scottjehl/Respond">Respond.js</a>, you'll need to add it to support media queries. 
 
 ### Notes ###
 * Most of the core components of Bootstrap have been tested -- grid system, buttons, forms, tables, etc., but there is more to work on. 
