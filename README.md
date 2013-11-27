@@ -4,7 +4,7 @@ Adds IE7 support to Bootstrap 3.
 
 * Adds IE7-specific formatting to Bootstrap components and HTML elements
 * Includes bug fixes for the usual suspects: hasLayout, inline-block bug, z-index bug., etc
-* VM tested for most reliability
+* VM tested for greatest reliability
 
 ### How to Use ###
 Add this conditional after bootstrap.css:
