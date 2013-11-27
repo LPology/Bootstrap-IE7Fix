@@ -18,6 +18,7 @@ Add this conditional after bootstrap.css:
 If you're not already using <a href="https://github.com/scottjehl/Respond">Respond.js</a>, you'll need to add it to support media queries. 
 
 ### Notes ###
+* Tested with Bootstrap version 3.0.2
 * Most of the core components of Bootstrap have been tested -- grid system, buttons, forms, tables, etc., but there is more to work on. 
 * To avoid the need for a box-sizing polyphill, the grid system is overriden with the Bootstrap 2.x grid layout.
 * If you want to test or help improve, Microsoft provides free VMs (<a href="http://www.modern.ie/en-us/virtualization-tools#downloads">here</a>) for testing in older versions of IE. This is far more accurate than the version emulator in IE.
