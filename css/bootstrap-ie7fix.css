@@ -39,8 +39,8 @@ input[type="checkbox"] {
   line-height: normal;
   min-height: 20px;
   display: inline;
-  zoom: 1;
   vertical-align: middle;
+  zoom: 1;  
 }
 
 select,
@@ -72,8 +72,8 @@ input[type="email"] {
   clear: both;
   display: block;
   margin: 0;
-  zoom: 1;
   width: 100%;
+  zoom: 1;  
 }
 
 .row:before,
@@ -83,8 +83,8 @@ input[type="email"] {
 
 .page-header {
   display:block;
-  zoom:1;
   clear:both;
+  zoom: 1;  
 }
 
 .btn {
@@ -158,17 +158,13 @@ input[type="email"] {
   padding-bottom: 7px;
 }
 
-.navbar {
-  position: relative;
-  zoom: 1;
-  z-index: 2;
-}
-
-.navbar-form, .form-inline {
-  margin-bottom: 0;
-  display:inline;
-  zoom: 1;
-}
+.form-inline input[type="text"],
+.form-inline input[type="password"],
+.form-inline input[type="email"] {
+  height: 18px;
+  width: 150px;
+  padding: 6px 5px;  
+} 
 
 .form-inline .radio,
 .form-inline .checkbox,
@@ -182,11 +178,36 @@ input[type="email"] {
 
 .form-inline .radio,
 .form-inline .checkbox {
-  padding-top:5px;
-  margin-bottom: 0;
-  vertical-align: middle;  
+  padding-top: 6px;
 }
 
+.navbar {
+  position: relative;
+  z-index: 2;
+  zoom: 1;  
+}
+
+.navbar-form {
+  margin-top: 10px;
+}
+
+.navbar-form input[type="text"],
+.navbar-form input[type="password"],
+.navbar-form input[type="email"] {
+  height: 16px;
+  width: 140px;
+  font-size: 13px;
+  padding: 5px;  
+  padding-top:5px;
+} 
+
+.navbar-form .btn {
+  font-size: 13px;
+  padding: 3px 9px;
+}
+
+.navbar-form,
+.form-inline,
 .form-inline input,
 .form-horizontal input,
 .form-inline textarea,
@@ -199,46 +220,39 @@ input[type="email"] {
 .form-horizontal .input-prepend,
 .form-inline .input-append,
 .form-horizontal .input-append {
-  display: inline;
   margin-bottom: 0;
+  display: inline;  
+  zoom: 1;
 }
 
-.navbar-form input[type="text"],
-.navbar-form input[type="password"],
-.navbar-form input[type="email"],
-.form-inline input[type="text"],
-.form-inline input[type="password"],
-.form-inline input[type="email"] {
-  height:17px;
-  width:140px;
-  padding-top:5px;  
-  padding-left:5px;
-} 
-
 .form-inline .form-group {
-  float:left;
+  float: left;
 }
 
 .caret {
-  text-indent:0;
+  text-indent: 0;
 }
 
 .dropdown-menu {
-  zoom:1;
-  z-index:1000;
+  z-index: 1000;
+  zoom: 1;  
 }
 
 .dropdown-menu li {
-  display:list-item;
-  zoom:1;
-  width:100%;
+  display: list-item;
+  width: 100%;
+  zoom: 1;  
 }
 
 .dropdown-menu .divider {
   width: 100%;
-  zoom:1;
   margin: 0;
   margin: -5px 0 5px;
+  zoom: 1;  
+}
+
+.dropdown-toggle {
+  margin-bottom:-3px;
 }
 
 .open {
@@ -251,38 +265,45 @@ input[type="email"] {
   zoom: 1;
 }
 
-.dropdown-toggle {
-  margin-bottom:-3px;
-}
-
 .list-group {
-  zoom:1;
-  padding:0;
+  padding: 0;
+  zoom: 1;  
 }
 
 .list-group-item {
-  list-style:none;
-  display:block;
-  width:100%;
-  zoom:1;
+  list-style: none;
+  display: block;
+  width: 100%;
+  zoom: 1;
 }
 
 /* IE7 apparently needs a more specific selector here */
 a.list-group-item.active .list-group-item-heading {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .sr-only {
-  clip:rect(0 0 0 0);
-}
-
-.table-bordered {
-  border-collapse: collapse;
+  clip: rect(0 0 0 0);
 }
 
 /* Elements that need zoom:1 to trigger hasLayout */
 .clearfix,
 .form-group, 
+.btn-group,
+.btn-toolbar,
+.progress,
+.progress-bar,
+.jumbotron,
+.panel,
+.modal,
+.modal-dialog,
+.modal-content,
+.modal-body,
+.popover,
+.collapsing,
+.carousel,
+.carousel-inner,
+.carousel-inner > .item,
 .form-horizontal .form-group,
 .img-responsive,
 .input-group,
@@ -293,8 +314,10 @@ a.list-group-item.active .list-group-item-heading {
 .nav-tabs,
 .nav-pills,
 .navbar-collapse,
+.navbar-toggle,
 .navbar-form,
 .modal-footer,
+.pagination > li > a,
 .dl-horizontal,
 textarea,
 table,
@@ -303,7 +326,7 @@ table td,
 table th,
 table col,
 textarea {
-  zoom:1;
+  zoom: 1;
 }  
 
 /* Everything that is display:inline-block needs the IE inline hack */
@@ -347,6 +370,7 @@ input.form-control,
 .breadcrumb > li,
 .pagination,
 .pagination > li,
+.pagination > li > span,
 .pager,
 .pager li,
 .pager li > a,
@@ -428,11 +452,10 @@ input.form-control,
 .row .col-lg-12 {
   display: block;
   float: left;
-  z-index: 1;
-  zoom: 1;  
   padding: 0;  
   margin: 0; /* reset margins to 0 */
   margin-left: 2.074468085106383%;
+  zoom: 1;    
 }
 
 .row .col-xs-1:first-child,

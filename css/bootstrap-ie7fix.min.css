@@ -9,14 +9,14 @@ html{font-size:100%}
 img{width:auto;height:auto;-ms-interpolation-mode:bicubic;zoom:1}
 input[type="file"],input[type="image"],input[type="submit"],input[type="reset"],input[type="button"],input[type="radio"],input[type="checkbox"]{width:auto;zoom:1}
 button,input{overflow:visible;zoom:1}
-input[type="radio"],input[type="checkbox"]{margin-top:0;line-height:normal;min-height:20px;display:inline;zoom:1;vertical-align:middle}
+input[type="radio"],input[type="checkbox"]{margin-top:0;line-height:normal;min-height:20px;display:inline;vertical-align:middle;zoom:1}
 select,input[type="file"]{margin-top:4px}
 input,button,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
 input[type="text"],input[type="password"],input[type="email"]{height:18px;padding-top:6px;padding-left:10px}
 .container{zoom:1}
-.row{clear:both;display:block;margin:0;zoom:1;width:100%}
+.row{clear:both;display:block;margin:0;width:100%;zoom:1}
 .row:before,.row:after{zoom:1}
-.page-header{display:block;zoom:1;clear:both}
+.page-header{display:block;clear:both;zoom:1}
 .btn{padding-top:3px;padding-bottom:3px;margin-left:.3em!important;border:0;z-index:1}
 .btn:first-child{margin-left:0!important}
 .btn.btn-default{border:1px solid #c6c6c6;background:#fff}
@@ -30,27 +30,28 @@ input[type="text"],input[type="password"],input[type="email"]{height:18px;paddin
 .btn-group>.btn-xs+.dropdown-toggle{padding-top:2px;padding-bottom:2px}
 .btn-group>.btn-sm+.dropdown-toggle{padding-top:5px;padding-bottom:4px}
 .btn-group>.btn-lg+.dropdown-toggle{padding-top:7px;padding-bottom:7px}
-.navbar{position:relative;zoom:1;z-index:2}
-.navbar-form,.form-inline{margin-bottom:0;display:inline;zoom:1}
+.form-inline input[type="text"],.form-inline input[type="password"],.form-inline input[type="email"]{height:18px;width:150px;padding:6px 5px}
 .form-inline .radio,.form-inline .checkbox,.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{float:left;margin-right:3px;padding-left:0;margin-bottom:0}
-.form-inline .radio,.form-inline .checkbox{padding-top:5px;margin-bottom:0;vertical-align:middle}
-.form-inline input,.form-horizontal input,.form-inline textarea,.form-horizontal textarea,.form-inline select,.form-horizontal select,.form-inline .uneditable-input,.form-horizontal .uneditable-input,.form-inline .input-prepend,.form-horizontal .input-prepend,.form-inline .input-append,.form-horizontal .input-append{display:inline;margin-bottom:0}
-.navbar-form input[type="text"],.navbar-form input[type="password"],.navbar-form input[type="email"],.form-inline input[type="text"],.form-inline input[type="password"],.form-inline input[type="email"]{height:17px;width:140px;padding-top:5px;padding-left:5px}
+.form-inline .radio,.form-inline .checkbox{padding-top:6px}
+.navbar{position:relative;z-index:2;zoom:1}
+.navbar-form{margin-top:10px}
+.navbar-form input[type="text"],.navbar-form input[type="password"],.navbar-form input[type="email"]{height:16px;width:140px;font-size:13px;padding:5px;padding-top:5px}
+.navbar-form .btn{font-size:13px;padding:3px 9px}
+.navbar-form,.form-inline,.form-inline input,.form-horizontal input,.form-inline textarea,.form-horizontal textarea,.form-inline select,.form-horizontal select,.form-inline .uneditable-input,.form-horizontal .uneditable-input,.form-inline .input-prepend,.form-horizontal .input-prepend,.form-inline .input-append,.form-horizontal .input-append{margin-bottom:0;display:inline;zoom:1}
 .form-inline .form-group{float:left}
 .caret{text-indent:0}
-.dropdown-menu{zoom:1;z-index:1000}
-.dropdown-menu li{display:list-item;zoom:1;width:100%}
-.dropdown-menu .divider{width:100%;zoom:1;margin:0;margin:-5px 0 5px}
+.dropdown-menu{z-index:1000;zoom:1}
+.dropdown-menu li{display:list-item;width:100%;zoom:1}
+.dropdown-menu .divider{width:100%;margin:0;margin:-5px 0 5px;zoom:1}
+.dropdown-toggle{margin-bottom:-3px}
 .open{z-index:1000}
 .media,.media-body{overflow:visible;zoom:1}
-.dropdown-toggle{margin-bottom:-3px}
-.list-group{zoom:1;padding:0}
+.list-group{padding:0;zoom:1}
 .list-group-item{list-style:none;display:block;width:100%;zoom:1}
 a.list-group-item.active .list-group-item-heading{color:#fff}
 .sr-only{clip:rect(0 0 0 0)}
-.table-bordered{border-collapse:collapse}
-.clearfix,.form-group,.form-horizontal .form-group,.img-responsive,.input-group,.input-group.col,.nav-tabs.nav-justified>li,.nav-stacked>li,.nav-justified>li,.nav-tabs,.nav-pills,.navbar-collapse,.navbar-form,.modal-footer,.dl-horizontal,textarea,table,tbody,table td,table th,table col,textarea{zoom:1}
-audio,canvas,video,.img-thumbnail,.list-inline>li,label,select,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],input.form-control,.radio-inline,.checkbox-inline,.caret,.form-inline input,.form-inline textarea,.form-inline select,.form-inline label,.form-horizontal input,.form-horizontal textarea,.form-horizontal select,.form-inline .btn-group,.btn,.btn-group-vertical,.collapse,.nav-justified>li,.breadcrumb>li,.pagination,.pagination>li,.pager,.pager li,.pager li>a,.pager li>span,.label,.badge,.thumbnail,.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-indicators li,.help-block{display:inline;zoom:1}
+.clearfix,.form-group,.btn-group,.btn-toolbar,.progress,.progress-bar,.jumbotron,.panel,.modal,.modal-dialog,.modal-content,.modal-body,.popover,.collapsing,.carousel,.carousel-inner,.carousel-inner>.item,.form-horizontal .form-group,.img-responsive,.input-group,.input-group.col,.nav-tabs.nav-justified>li,.nav-stacked>li,.nav-justified>li,.nav-tabs,.nav-pills,.navbar-collapse,.navbar-toggle,.navbar-form,.modal-footer,.pagination>li>a,.dl-horizontal,textarea,table,tbody,table td,table th,table col,textarea{zoom:1}
+audio,canvas,video,.img-thumbnail,.list-inline>li,label,select,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],input.form-control,.radio-inline,.checkbox-inline,.caret,.form-inline input,.form-inline textarea,.form-inline select,.form-inline label,.form-horizontal input,.form-horizontal textarea,.form-horizontal select,.form-inline .btn-group,.btn,.btn-group-vertical,.collapse,.nav-justified>li,.breadcrumb>li,.pagination,.pagination>li,.pagination>li>span,.pager,.pager li,.pager li>a,.pager li>span,.label,.badge,.thumbnail,.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-indicators li,.help-block{display:inline;zoom:1}
 @media (min-width: 768px) {
 .form-inline .form-group,.form-inline .form-control,.form-inline .radio,.form-inline .checkbox,.navbar-form .form-group,.navbar-form .form-control,.navbar-form .radio,.navbar-form .checkbox{display:inline;zoom:1}
 .col-sm-1{width:6.32978723404%}
@@ -115,7 +116,7 @@ audio,canvas,video,.img-thumbnail,.list-inline>li,label,select,input[type="text"
 .row .col-sm-offset-1:first-child{margin-left:8.40425531915%}
 .row .col-sm-offset-0,.row .col-sm-offset-0:first-child{margin-left:0}
 }
-.row .col-xs-1,.row .col-sm-1,.row .col-md-1,.row .col-lg-1,.row .col-xs-2,.row .col-sm-2,.row .col-md-2,.row .col-lg-2,.row .col-xs-3,.row .col-sm-3,.row .col-md-3,.row .col-lg-3,.row .col-xs-4,.row .col-sm-4,.row .col-md-4,.row .col-lg-4,.row .col-xs-5,.row .col-sm-5,.row .col-md-5,.row .col-lg-5,.row .col-xs-6,.row .col-sm-6,.row .col-md-6,.row .col-lg-6,.row .col-xs-7,.row .col-sm-7,.row .col-md-7,.row .col-lg-7,.row .col-xs-8,.row .col-sm-8,.row .col-md-8,.row .col-lg-8,.row .col-xs-9,.row .col-sm-9,.row .col-md-9,.row .col-lg-9,.row .col-xs-10,.row .col-sm-10,.row .col-md-10,.row .col-lg-10,.row .col-xs-11,.row .col-sm-11,.row .col-md-11,.row .col-lg-11,.row .col-xs-12,.row .col-sm-12,.row .col-md-12,.row .col-lg-12{display:block;float:left;z-index:1;zoom:1;padding:0;margin:0;margin-left:2.07446808511%}
+.row .col-xs-1,.row .col-sm-1,.row .col-md-1,.row .col-lg-1,.row .col-xs-2,.row .col-sm-2,.row .col-md-2,.row .col-lg-2,.row .col-xs-3,.row .col-sm-3,.row .col-md-3,.row .col-lg-3,.row .col-xs-4,.row .col-sm-4,.row .col-md-4,.row .col-lg-4,.row .col-xs-5,.row .col-sm-5,.row .col-md-5,.row .col-lg-5,.row .col-xs-6,.row .col-sm-6,.row .col-md-6,.row .col-lg-6,.row .col-xs-7,.row .col-sm-7,.row .col-md-7,.row .col-lg-7,.row .col-xs-8,.row .col-sm-8,.row .col-md-8,.row .col-lg-8,.row .col-xs-9,.row .col-sm-9,.row .col-md-9,.row .col-lg-9,.row .col-xs-10,.row .col-sm-10,.row .col-md-10,.row .col-lg-10,.row .col-xs-11,.row .col-sm-11,.row .col-md-11,.row .col-lg-11,.row .col-xs-12,.row .col-sm-12,.row .col-md-12,.row .col-lg-12{display:block;float:left;padding:0;margin:0;margin-left:2.07446808511%;zoom:1}
 .row .col-xs-1:first-child,.row .col-sm-1:first-child,.row .col-md-1:first-child,.row .col-lg-1:first-child,.row .col-xs-2:first-child,.row .col-sm-2:first-child,.row .col-md-2:first-child,.row .col-lg-2:first-child,.row .col-xs-3:first-child,.row .col-sm-3:first-child,.row .col-md-3:first-child,.row .col-lg-3:first-child,.row .col-xs-4:first-child,.row .col-sm-4:first-child,.row .col-md-4:first-child,.row .col-lg-4:first-child,.row .col-xs-5:first-child,.row .col-sm-5:first-child,.row .col-md-5:first-child,.row .col-lg-5:first-child,.row .col-xs-6:first-child,.row .col-sm-6:first-child,.row .col-md-6:first-child,.row .col-lg-6:first-child,.row .col-xs-7:first-child,.row .col-sm-7:first-child,.row .col-md-7:first-child,.row .col-lg-7:first-child,.row .col-xs-8:first-child,.row .col-sm-8:first-child,.row .col-md-8:first-child,.row .col-lg-8:first-child,.row .col-xs-9:first-child,.row .col-sm-9:first-child,.row .col-md-9:first-child,.row .col-lg-9:first-child,.row .col-xs-10:first-child,.row .col-sm-10:first-child,.row .col-md-10:first-child,.row .col-lg-10:first-child,.row .col-xs-11:first-child,.row .col-sm-11:first-child,.row .col-md-11:first-child,.row .col-lg-11:first-child,.row .col-xs-12:first-child,.row .col-sm-12:first-child,.row .col-md-12:first-child,.row .col-lg-12:first-child{margin-left:0}
 .col-xs-1{width:6.32978723404%}
 .col-xs-2{width:14.8404255319%}
@@ -506,4 +507,4 @@ audio,canvas,video,.img-thumbnail,.list-inline>li,label,select,input[type="text"
 .glyphicon-warning-sign{zoom:expression(this.runtimeStyle["zoom"]="1",this.innerHTML="&#xe107;")}
 .glyphicon-wrench{zoom:expression(this.runtimeStyle["zoom"]="1",this.innerHTML="&#xe136;")}
 .glyphicon-zoom-in{zoom:expression(this.runtimeStyle["zoom"]="1",this.innerHTML="&#xe015;")}
-.glyphicon-zoom-out{zoom:expression(this.runtimeStyle["zoom"]="1",this.innerHTML="&#xe016;")}
+.glyphicon-zoom-out{zoom:expression(this.runtimeStyle["zoom"]="1",this.innerHTML="&#xe016;")} 
