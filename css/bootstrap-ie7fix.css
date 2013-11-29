@@ -127,18 +127,6 @@ input[type="email"].input-sm {
   background: #ebebeb;
 }
 
-.btn.btn-xs {
-  padding: 1px 8px;
-}
-
-.btn.btn-sm {
-  padding: 3px 10px;
-}
-
-.btn.btn-lg {
-  padding: 7px 14px;
-}
-
 .btn-group {
   margin-left: .3em;
   display: inline;
