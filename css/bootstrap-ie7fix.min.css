@@ -23,9 +23,6 @@ input[type="text"].input-sm,input[type="password"].input-sm,input[type="email"].
 .btn:first-child{margin-left:0!important}
 .btn.btn-default{border:1px solid #c6c6c6;background:#fff}
 .btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default{border:1px solid #bbb;background:#ebebeb}
-.btn.btn-xs{padding:1px 8px}
-.btn.btn-sm{padding:3px 10px}
-.btn.btn-lg{padding:7px 14px}
 .btn-group{margin-left:.3em;display:inline;zoom:1}
 .btn-group>.btn,.btn-group-vertical>.btn{position:relative}
 .btn-group>.btn+.btn,v.btn-group-vertical>.btn+.btn{margin-left:-1px!important}
