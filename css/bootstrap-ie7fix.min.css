@@ -19,7 +19,7 @@ input[type="text"].input-sm,input[type="password"].input-sm,input[type="email"].
 .row{clear:both;display:block;margin:0;width:100%;zoom:1}
 .row:before,.row:after{zoom:1}
 .page-header{display:block;clear:both}
-.btn{padding:6px 12px;margin-left:.3em!important;border:0;z-index:1}
+.btn{margin-left:.3em!important;border:0;z-index:1}
 .btn:first-child{margin-left:0!important}
 .btn.btn-default{border:1px solid #c6c6c6;background:#fff}
 .btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default{border:1px solid #bbb;background:#ebebeb}
