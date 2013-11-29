@@ -104,6 +104,8 @@ input[type="email"].input-sm {
 }
 
 .btn {
+  padding-top: 4px;
+  padding-bottom: 4px;
   margin-left: .3em !important;
   border: 0;
   z-index: 1;
