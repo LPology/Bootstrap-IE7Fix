@@ -1,5 +1,5 @@
 /**
- * Bootstrap 3 IE7 Fix v0.1
+ * Bootstrap 3 IE7 Fix v0.2
  * https://github.com/LPology/Bootstrap-IE7Fix
  *
  * Copyright 2013 LPology, LLC
@@ -64,6 +64,23 @@ input[type="email"] {
   padding-left: 10px;
 }
 
+input[type="text"].input-lg,
+input[type="password"].input-lg,
+input[type="email"].input-lg {
+  height: 22px;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+input[type="text"].input-sm,
+input[type="password"].input-sm,
+input[type="email"].input-sm {
+  height: 16px;
+  padding-top: 4px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
 .container {
   zoom: 1;
 }
@@ -82,17 +99,15 @@ input[type="email"] {
 }
 
 .page-header {
-  display:block;
-  clear:both;
-  zoom: 1;  
+  display: block;
+  clear: both;
 }
 
 .btn {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 4px 12px;
   margin-left: .3em !important;
   border: 0;
-  z-index:1;
+  z-index: 1;
 }
 
 .btn:first-child {
@@ -114,18 +129,15 @@ input[type="email"] {
 }
 
 .btn.btn-xs {
-  padding-top:1px;
-  padding-bottom:1px;
+  padding: 1px 8px;
 }
 
 .btn.btn-sm {
-  padding-top:3px;
-  padding-bottom:3px;
+  padding: 3px 10px;
 }
 
 .btn.btn-lg {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 7px 14px;
 }
 
 .btn-group {
@@ -134,7 +146,13 @@ input[type="email"] {
   zoom: 1;
 }
 
-.btn-group > .btn + .btn {
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  position: relative;
+}
+
+.btn-group > .btn + .btn,
+v.btn-group-vertical > .btn + .btn {
   margin-left: -1px !important;
 }
 
@@ -158,12 +176,33 @@ input[type="email"] {
   padding-bottom: 7px;
 }
 
+.input-group {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.input-group input {
+  margin-left: -4px;
+  margin-right: -5px;
+  vertical-align: middle;
+}
+
+.input-group .input-group-addon {
+  width: auto;
+  min-width: 16px;
+  height: 22px;
+  padding: 4px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
 .form-inline input[type="text"],
 .form-inline input[type="password"],
 .form-inline input[type="email"] {
   height: 18px;
   width: 150px;
-  padding: 6px 5px;  
+  padding: 6px 5px;
 } 
 
 .form-inline .radio,
@@ -184,7 +223,6 @@ input[type="email"] {
 .navbar {
   position: relative;
   z-index: 2;
-  zoom: 1;  
 }
 
 .navbar-form {
@@ -235,20 +273,17 @@ input[type="email"] {
 
 .dropdown-menu {
   z-index: 1000;
-  zoom: 1;  
 }
 
 .dropdown-menu li {
   display: list-item;
   width: 100%;
-  zoom: 1;  
 }
 
 .dropdown-menu .divider {
   width: 100%;
   margin: 0;
   margin: -5px 0 5px;
-  zoom: 1;  
 }
 
 .dropdown-toggle {
@@ -262,19 +297,6 @@ input[type="email"] {
 .media,
 .media-body {
   overflow: visible;
-  zoom: 1;
-}
-
-.list-group {
-  padding: 0;
-  zoom: 1;  
-}
-
-.list-group-item {
-  list-style: none;
-  display: block;
-  width: 100%;
-  zoom: 1;
 }
 
 /* IE7 apparently needs a more specific selector here */
@@ -286,39 +308,27 @@ a.list-group-item.active .list-group-item-heading {
   clip: rect(0 0 0 0);
 }
 
-/* Elements that need zoom:1 to trigger hasLayout */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Trigger hasLayout on elements which either don't get it by default
+   or for which hasLayout may have been reset by another rule
+ */
 .clearfix,
-.form-group, 
-.btn-group,
-.btn-toolbar,
-.progress,
-.progress-bar,
-.jumbotron,
-.panel,
-.modal,
-.modal-dialog,
-.modal-content,
-.modal-body,
-.popover,
-.collapsing,
-.carousel,
-.carousel-inner,
-.carousel-inner > .item,
-.form-horizontal .form-group,
-.img-responsive,
-.input-group,
-.input-group.col ,
-.nav-tabs.nav-justified > li,
-.nav-stacked > li,
-.nav-justified > li,
-.nav-tabs,
-.nav-pills,
-.navbar-collapse,
-.navbar-toggle,
-.navbar-form,
-.modal-footer,
-.pagination > li > a,
-.dl-horizontal,
+ul,
+ol,
+li,
+form,
+div,
+button,
+input,
+select,
+hr,
 textarea,
 table,
 tbody,
@@ -333,8 +343,7 @@ textarea {
 audio,
 canvas,
 video,
-.img-thumbnail,
-.list-inline > li,
+span,
 label,
 select,
 input[type="text"],
@@ -354,14 +363,12 @@ input[type="color"],
 input.form-control,
 .radio-inline,
 .checkbox-inline,
+.img-thumbnail,
+.list-inline > li,
 .caret,
-.form-inline input,
 .form-inline textarea,
-.form-inline select,
 .form-inline label,
-.form-horizontal input,
 .form-horizontal textarea,
-.form-horizontal select,
 .form-inline .btn-group,
 .btn,
 .btn-group-vertical,
@@ -1547,6 +1554,7 @@ input.form-control,
   zoom:1;
   text-decoration:inherit;
   line-height:normal;
+  top: 2px;
 }
 
 .glyphicon-adjust{zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xe063;')}
