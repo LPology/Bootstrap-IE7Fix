@@ -1,5 +1,5 @@
 /**
- * Bootstrap 3 IE7 Fix v0.2
+ * Bootstrap 3 IE7 Fix v0.3
  * https://github.com/LPology/Bootstrap-IE7Fix
  *
  * Copyright 2013 LPology, LLC
@@ -81,10 +81,6 @@ input[type="email"].input-sm {
   font-size: 12px;
 }
 
-.container {
-  zoom: 1;
-}
-
 .row {
   clear: both;
   display: block;
@@ -101,6 +97,7 @@ input[type="email"].input-sm {
 .page-header {
   display: block;
   clear: both;
+  zoom: 1;
 }
 
 .btn {
@@ -139,7 +136,7 @@ input[type="email"].input-sm {
 }
 
 .btn-group > .btn + .btn,
-v.btn-group-vertical > .btn + .btn {
+.btn-group-vertical > .btn + .btn {
   margin-left: -1px !important;
 }
 
@@ -161,27 +158,6 @@ v.btn-group-vertical > .btn + .btn {
 .btn-group > .btn-lg + .dropdown-toggle {
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.input-group {
-  white-space: nowrap;
-  vertical-align: middle;
-}
-
-.input-group input {
-  margin-left: -4px;
-  margin-right: -5px;
-  vertical-align: middle;
-}
-
-.input-group .input-group-addon {
-  width: auto;
-  min-width: 16px;
-  height: 22px;
-  padding: 4px 5px;
-  font-size: 14px;
-  line-height: 20px;
-  vertical-align: middle;
 }
 
 .form-inline input[type="text"],
@@ -210,6 +186,7 @@ v.btn-group-vertical > .btn + .btn {
 .navbar {
   position: relative;
   z-index: 2;
+  zoom: 1;
 }
 
 .navbar-form {
@@ -260,6 +237,7 @@ v.btn-group-vertical > .btn + .btn {
 
 .dropdown-menu {
   z-index: 1000;
+  zoom: 1;
 }
 
 .dropdown-menu li {
@@ -279,11 +257,13 @@ v.btn-group-vertical > .btn + .btn {
 
 .open {
   z-index: 1000;
+  zoom: 1;
 }
 
 .media,
 .media-body {
   overflow: visible;
+  zoom: 1;
 }
 
 /* IE7 apparently needs a more specific selector here */
@@ -301,17 +281,71 @@ a.list-group-item.active .list-group-item-heading {
   right: 0;
   left: 0;
   z-index: 1030;
+  zoom: 1;
 }
 
-/* Trigger hasLayout on elements which either don't get it by default
-   or for which hasLayout may have been reset by another rule
- */
+.input-group {
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  zoom: 1;
+}
+
+.input-group input {
+  vertical-align: middle;
+}
+
+.input-group .input-group-addon {
+  width: auto;
+  min-width: 16px;
+  height: 22px;
+  padding: 4px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline;
+  position: relative;
+  z-index: 1;  
+  zoom: 1;
+}
+
+.input-group-addon {
+  left: -5px;
+}
+.input-group-addon:first-child {
+  left: 4px;
+}
+
+/*
+  Trigger hasLayout on elements which either don't get it by default
+  or for which hasLayout may have been reset by another rule
+*/
+.alert,
+.progress,
+.progress-bar,
 .clearfix,
+.container,
+.dropdown,
+.btn-toolbar,
+.nav,
+.navbar-header,
+.form-group,
+.jumbotron,
+.list-group,
+.panel,
+.panel-heading,
+.panel-body,
+.panel-footer,
+.well,
+.tab-content,
+.tab-pane,
+.carousel,
+.carousel-inner,
+.carousel-control,
 ul,
 ol,
 li,
 form,
-div,
 button,
 input,
 select,

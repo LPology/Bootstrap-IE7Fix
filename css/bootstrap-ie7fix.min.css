@@ -1,5 +1,5 @@
 /**
- * Bootstrap 3 IE7 Fix v0.2
+ * Bootstrap 3 IE7 Fix v0.3
  * https://github.com/LPology/Bootstrap-IE7Fix
  *
  * Copyright 2013 LPology, LLC
@@ -15,44 +15,45 @@ input,button,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-s
 input[type="text"],input[type="password"],input[type="email"]{height:18px;padding-top:6px;padding-left:10px}
 input[type="text"].input-lg,input[type="password"].input-lg,input[type="email"].input-lg{height:22px;padding-top:6px;padding-left:10px}
 input[type="text"].input-sm,input[type="password"].input-sm,input[type="email"].input-sm{height:16px;padding-top:4px;padding-left:10px;font-size:12px}
-.container{zoom:1}
 .row{clear:both;display:block;margin:0;width:100%;zoom:1}
 .row:before,.row:after{zoom:1}
-.page-header{display:block;clear:both}
+.page-header{display:block;clear:both;zoom:1}
 .btn{margin-left:.3em!important;border:0;z-index:1}
 .btn:first-child{margin-left:0!important}
 .btn.btn-default{border:1px solid #c6c6c6;background:#fff}
 .btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default{border:1px solid #bbb;background:#ebebeb}
 .btn-group{margin-left:.3em;display:inline;zoom:1}
 .btn-group>.btn,.btn-group-vertical>.btn{position:relative}
-.btn-group>.btn+.btn,v.btn-group-vertical>.btn+.btn{margin-left:-1px!important}
+.btn-group>.btn+.btn,.btn-group-vertical>.btn+.btn{margin-left:-1px!important}
 .btn-group>.btn-default+.dropdown-toggle{padding-top:5px;padding-bottom:5px}
 .btn-group>.btn-xs+.dropdown-toggle{padding-top:2px;padding-bottom:2px}
 .btn-group>.btn-sm+.dropdown-toggle{padding-top:5px;padding-bottom:4px}
 .btn-group>.btn-lg+.dropdown-toggle{padding-top:7px;padding-bottom:7px}
-.input-group{white-space:nowrap;vertical-align:middle}
-.input-group input{margin-left:-4px;margin-right:-5px;vertical-align:middle}
-.input-group .input-group-addon{width:auto;min-width:16px;height:22px;padding:4px 5px;font-size:14px;line-height:20px;vertical-align:middle}
 .form-inline input[type="text"],.form-inline input[type="password"],.form-inline input[type="email"]{height:18px;width:150px;padding:6px 5px}
 .form-inline .radio,.form-inline .checkbox,.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{float:left;margin-right:3px;padding-left:0;margin-bottom:0}
 .form-inline .radio,.form-inline .checkbox{padding-top:6px}
-.navbar{position:relative;z-index:2}
+.navbar{position:relative;z-index:2;zoom:1}
 .navbar-form{margin-top:10px}
 .navbar-form input[type="text"],.navbar-form input[type="password"],.navbar-form input[type="email"]{height:16px;width:140px;font-size:13px;padding:5px;padding-top:5px}
 .navbar-form .btn{font-size:13px;padding:3px 9px}
 .navbar-form,.form-inline,.form-inline input,.form-horizontal input,.form-inline textarea,.form-horizontal textarea,.form-inline select,.form-horizontal select,.form-inline .uneditable-input,.form-horizontal .uneditable-input,.form-inline .input-prepend,.form-horizontal .input-prepend,.form-inline .input-append,.form-horizontal .input-append{margin-bottom:0;display:inline;zoom:1}
 .form-inline .form-group{float:left}
 .caret{text-indent:0}
-.dropdown-menu{z-index:1000}
+.dropdown-menu{z-index:1000;zoom:1}
 .dropdown-menu li{display:list-item;width:100%}
 .dropdown-menu .divider{width:100%;margin:0;margin:-5px 0 5px}
 .dropdown-toggle{margin-bottom:-3px}
-.open{z-index:1000}
-.media,.media-body{overflow:visible}
+.open{z-index:1000;zoom:1}
+.media,.media-body{overflow:visible;zoom:1}
 a.list-group-item.active .list-group-item-heading{color:#fff}
 .sr-only{clip:rect(0 0 0 0)}
-.navbar-fixed-top,.navbar-fixed-bottom{position:fixed;right:0;left:0;z-index:1030}
-.clearfix,ul,ol,li,form,div,button,input,select,hr,textarea,table,tbody,table td,table th,table col,textarea{zoom:1}
+.navbar-fixed-top,.navbar-fixed-bottom{position:fixed;right:0;left:0;z-index:1030;zoom:1}
+.input-group{white-space:nowrap;vertical-align:middle;position:relative;zoom:1}
+.input-group input{vertical-align:middle}
+.input-group .input-group-addon{width:auto;min-width:16px;height:22px;padding:4px 5px;font-size:14px;line-height:20px;vertical-align:middle;display:inline;position:relative;z-index:1;zoom:1}
+.input-group-addon{left:-5px}
+.input-group-addon:first-child{left:4px}
+.alert,.progress,.progress-bar,.clearfix,.container,.dropdown,.btn-toolbar,.nav,.navbar-header,.form-group,.jumbotron,.list-group,.panel,.panel-heading,.panel-body,.panel-footer,.well,.tab-content,.tab-pane,.carousel,.carousel-inner,.carousel-control,ul,ol,li,form,button,input,select,hr,textarea,table,tbody,table td,table th,table col,textarea{zoom:1}
 audio,canvas,video,span,label,select,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],input.form-control,.radio-inline,.checkbox-inline,.img-thumbnail,.list-inline>li,.caret,.form-inline textarea,.form-inline label,.form-horizontal textarea,.form-inline .btn-group,.btn,.btn-group-vertical,.collapse,.nav-justified>li,.breadcrumb>li,.pagination,.pagination>li,.pagination>li>span,.pager,.pager li,.pager li>a,.pager li>span,.label,.badge,.thumbnail,.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-indicators li,.help-block{display:inline;zoom:1}
 @media (min-width: 768px) {
 .form-inline .form-group,.form-inline .form-control,.form-inline .radio,.form-inline .checkbox,.navbar-form .form-group,.navbar-form .form-control,.navbar-form .radio,.navbar-form .checkbox{display:inline;zoom:1}
