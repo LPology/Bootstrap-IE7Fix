@@ -1,5 +1,5 @@
 ### Version 0.3 ###
-* Removed `zoom: 1` from `div` element. The hasLayout property is now triggered on components individually
+* `zoom: 1` is no longer applied universally to the `div` element. Instead, hasLayout is now triggered on components individually
 * Added `zoom: 1` to several components to trigger hasLayout property
 * Removed stray "v" character from `.btn-group-vertical > .btn + .btn` on line 142
 * Cleaned up formatting, merged several rules
