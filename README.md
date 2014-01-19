@@ -6,6 +6,8 @@ Adds IE7 support to Bootstrap 3.
 * Includes bug fixes for the usual suspects: hasLayout, inline-block bug, z-index bug., etc
 * VM tested for greatest reliability
 
+Demo: https://www.lpology.com
+
 ### How to Use ###
 Add this conditional after bootstrap.css:
 
